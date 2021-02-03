@@ -6,23 +6,3 @@ with open("Python Developer Test Dataset.csv") as file:
     sorted_numbers = sorted(reader, key=lambda row: float(row[-1]))
 
     print(sorted_numbers[0:5])
-
-
-
-
-
-
-
-        
-
-    
-
-
-    
-   
-
-    
-        
-
-
-    
