@@ -7,6 +7,7 @@ with open("Python Developer Test Dataset.csv") as file:
     next(reader)
     global_data = list(reader)
 
+# list out options to choose which script to run
 def choice():
     print(
         """
@@ -31,9 +32,10 @@ def choice():
 def task_1():
     sorted_data = sorted(global_data, key=lambda row: float(row[-1]))
     top_five = sorted_data[0:5]
-
     for row in top_five:
-        print(row)
+        print(", ".join(row))
+        print("---")
+        
 
 # print all tenants with lease_years = 25 and total rent
 def task_2():
